@@ -1,7 +1,7 @@
 # My Custom Caddy
 
-I need a few plugins for my Caddy, it's easy enough to build it
-myself, following the [caddy-build] instructions.
+I need a few plugins for my Caddy.  It's easy enough to build it
+myself, following the [Caddy build][caddy-build] instructions.
 
 This is the result.
 
@@ -17,7 +17,7 @@ go build
 > should then be able to build with `go build -tags=coredns` and let
 > it add that line. (I think)
 >
-> From: [coredns-adding-plugins]
+> From a [CoreDNS thread][coredns-adding-plugins].
 
 [caddy-build]: https://github.com/mholt/caddy#build
-[coredns-adding-pluggins]: https://caddy.community/t/building-coredns-automatically/481/10
+[coredns-adding-plugins]: https://caddy.community/t/building-coredns-automatically/481/10
