@@ -11,6 +11,13 @@ Build it like so:
 go build
 ```
 
+## FreeBSD port
+
+Create `/usr/ports/www/caddy-custom`, copy the contents of the port
+directory into it, `cd` into it, and `make install`.
+
+*Et voila!*
+
 ## TODO
 
 > Shall I whip up an go gen thingy that adds that line? I think you

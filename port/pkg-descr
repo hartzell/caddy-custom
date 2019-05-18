@@ -1,0 +1,6 @@
+Customized Caddy server
+
+Built using the standard techniques for customized builds, described
+[here](https://github.com/mholt/caddy#build).
+
+WWW: https://caddyserver.com
