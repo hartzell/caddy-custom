@@ -18,7 +18,13 @@ GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 
 PLIST_FILES=	bin/caddy etc/rc.d/caddy
 
+OPTIONS_DEFINE=	PLUGINS TELEMETRY
+PLUGINS_DESC=	Whitespace separated list of plugin package names
+TELEMETRY_DESC=	Boolean, enable Caddy telemetry
+
 do-build:
+	@cd ${WRKSRC} && env CADDY_PLUGINS=${CADDY_PLUGINS} \
+		${SETENV} ${MAKE_ENV} ${GO_ENV} ${GO_CMD} generate
 	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GO_ENV} ${GO_CMD} build
 
 do-install:
