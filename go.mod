@@ -2,6 +2,9 @@ module github.com/hartzell/caddy-custom
 
 go 1.15
 
+// https://github.com/lucas-clemente/quic-go/issues/2614
+replace github.com/lucas-clemente/quic-go => github.com/lucas-clemente/quic-go v0.18.0
+
 require (
 	github.com/abiosoft/caddy-git v0.0.0-20190703061829-f8cc2f20c9e7
 	github.com/caddyserver/caddy v1.0.5
